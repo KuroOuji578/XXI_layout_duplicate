@@ -36,5 +36,7 @@ public class SecondActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        //sebuah pembaharuan
     }
 }

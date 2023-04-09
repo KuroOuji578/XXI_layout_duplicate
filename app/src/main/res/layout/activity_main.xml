@@ -100,118 +100,24 @@
             app:srcCompat="@drawable/crs" />
     </FrameLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="313dp"
-        android:orientation="horizontal">
+        android:layout_height="338dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListMovie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <LinearLayout
-            android:layout_width="173dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/rounded_banner"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="219dp"
-                android:layout_marginTop="10dp">
-
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/suzume" />
-            </FrameLayout>
-            <TextView
-                android:layout_marginTop="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SUZUME"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
-            <LinearLayout
-                android:layout_marginTop="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2D"
-                    android:textStyle="bold"
-                    android:textColor="#206E65"/>
-                <TextView
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SU"
-                    android:textStyle="bold"
-                    android:textColor="#206E65"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="173dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/rounded_banner"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="219dp"
-                android:layout_marginTop="10dp">
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/antman" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="ANT-MAN AND THE WASP: QUANTUMANIA"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                tools:ignore="TextSizeCheck" />
-            <LinearLayout
-                android:layout_marginTop="18dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2D"
-                    android:textStyle="bold"
-                    android:textColor="#206E65"/>
-                <TextView
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SU"
-                    android:textStyle="bold"
-                    android:textColor="#206E65"/>
-            </LinearLayout>
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-    <LinearLayout
         android:paddingTop="10dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/black"
